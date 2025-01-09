@@ -1,0 +1,216 @@
+
+        
+      html {
+        scroll-behavior: smooth;
+      }
+
+      main {
+        padding: 2em;
+      }
+      /* Apply Poppins font-family */
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f0f0f0;
+        color: #333;
+        overflow-x: hidden; /* Prevent horizontal scroll */
+      }
+      #heading{
+            width: 100vw;
+            height: 50px;
+            background-color: black;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            
+        }
+      
+
+      
+
+      .vr {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+        overflow-x: auto;
+        
+      }
+
+      .vr .option {
+        padding: 10px 20px;
+        background-color: black;
+        border-radius: 20px;
+        cursor: pointer;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        white-space: nowrap;
+      }
+
+      .vr .option.active {
+        background-color: #e39b15;
+        color: #fff;
+      }
+
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        text-align: left;
+      }
+
+      .card img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .card h3 {
+        margin: 10px 0 5px;
+        font-size: 18px;
+        color: black;
+      }
+
+      .card p {
+        color: #666;
+        font-size: 14px;
+      }
+
+      .card .price {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .card .original-price {
+        text-decoration: line-through;
+        color: #999;
+        margin-left: 10px;
+      }
+
+      .card .tags {
+        display: flex;
+        gap: 5px;
+        margin-top: 10px;
+      }
+
+      .card .tag {
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      .card .tag.premium {
+        background-color: #6c63ff;
+      }
+
+      .card .tag.bestseller {
+        background-color: #4caf50;
+      }
+
+      @media (width<= 768px) and (width>=480px) {
+        #heading{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.8rem;
+          padding: 10px;
+          height: 60px;
+          
+        }
+        .vr {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 20px;
+          overflow-x: auto;
+          width: 100%;
+        }
+  
+        .vr .option {
+          padding: 15px;
+          background-color: black;
+          border-radius: 20px;
+          cursor: pointer;
+          text-align: center;
+          font-weight: bold;
+          color: white;
+          font-weight: 300;
+          font-size: 16px;
+          margin: 0%;
+          white-space: nowrap;
+        }
+        .card-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 20px;
+        }
+  
+        .card {
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          padding: 10px;
+          text-align: left;
+        }
+      }
+    
+      @media (max-width: 480px) {
+        #heading{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.2rem;
+          padding: 5px;
+          height: 50px;
+          
+        }
+        .vr {
+          display: flex;
+          gap: 5px;
+          margin-bottom: 20px;
+          overflow-x: auto;
+          width: 100%;
+        }
+  
+        .vr .option {
+          padding: 5px;
+          background-color: black;
+          border-radius: 20px;
+          cursor: pointer;
+          text-align: center;
+          font-weight: bold;
+          color: white;
+          font-weight: 300;
+          font-size: 12px;
+          margin: 0%;
+          white-space: nowrap;
+        }
+        .card-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 20px;
+        }
+  
+        .card {
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          padding: 10px;
+          text-align: left;
+        }
+  
+      }
+      

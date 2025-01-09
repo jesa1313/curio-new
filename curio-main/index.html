@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CURIO | Find the Why</title>
+    <link rel="icon" href="img/Find_the_Why-removebg-preview.png" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="landing.css" />
+    <link rel="stylesheet" href="nav-footer.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+  </head>
+  <button id="install-button" style="display: none">Install App</button>
+  <body class="bg-gray-50">
+  <body class="bg-gray-50">
+
+    <!-- First, the navbar -->
+    <nav class="site-navbar">
+      <div class="navbar-container">
+        <div class="navbar-content">
+          <div class="navbar-logo">
+            <img
+              src="./img/Find_the_Why-removebg-preview.png"
+              alt="CURIO Logo"
+              class="logo-image"
+            />
+          </div>
+          <div class="navbar-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="VRtore.html" class="nav-link">VR-Tours</a>
+            <a href="ARmodel.HTML" class="nav-link">AR-Models</a>
+            <a href="about.html" class="nav-link">About-us</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf57WzB4HfgsQrwrGx2_MHh9kBCAoLlJu44Ok0HZaJDsrUtXQ/viewform"><button class="nav-button">Get Started</button></a>
+          </div>
+          <button class="toggle-btn" id="toggle-btn">☰</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- heroSection  -->
+    <div class="dynamic-hero">
+      <video autoplay loop muted class="vd">
+        <source src="./img/Home2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="dynamic-hero-content">
+        <h1 class="hero-title"></h1>
+        <p class="hero-description"></p>
+        <div class="hero-buttons">
+          <a href="ARmodel.HTML"
+            ><button class="hero-btn primary">Explore AR Technology</button></a
+          >
+          <a href="VRtore.html"
+            ><button class="hero-btn secondary">
+              Virtual Interactive Tools
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="p-6 bg-gray-50 rounded-xl card-hover" data-aos="fade-up">
+            <div
+              class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-4"
+            >
+              <img
+                src="img/icon/icon1.svg"
+                alt="Interconnected"
+                class="w-6 h-6"
+              />
+            </div>
+            <span style="font-size: 1.3rem; font-weight: 500; color: #f57125"
+              >Interconnected</span
+            >
+            <p class="text-gray-600">
+              An interactive learning environment where students and teachers
+              access and share knowledge across multiple branches of science.
+            </p>
+          </div>
+          <div
+            class="p-6 bg-gray-50 rounded-xl card-hover"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-4"
+            >
+              <img
+                src="img/icon/icon2.svg"
+                alt="Interdisciplinary"
+                class="w-6 h-6"
+              />
+            </div>
+            <span style="font-size: 1.3rem; font-weight: 500; color: #f57125"
+              >Interdisciplinary</span
+            >
+            <p class="text-gray-600">
+              Merging knowledge from various fields to inspire students and
+              teachers to explore concepts beyond boundaries.
+            </p>
+          </div>
+          <div
+            class="p-6 bg-gray-50 rounded-xl card-hover"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-4"
+            >
+              <img
+                src="img/icon/icon3.svg"
+                alt="Gamified Learning"
+                class="w-6 h-6"
+              />
+            </div>
+            <span style="font-size: 1.3rem; font-weight: 500; color: #f57125"
+              >Gamified Learning</span
+            >
+            <p class="text-gray-600">
+              This approach boosts student’s motivation ,curiocity, enhances
+              collaborations and improves problem solving skills.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl font-bold text-gray-900">
+            Unique Designed Courses
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden card-hover"
+            data-aos="fade-up"
+          >
+            <img
+              src="img/IOT AND MOTOR TECH .jpg"
+              alt="IOT Course"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                IOT & Motor Tech. impact on Economy
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Imagine everyday objects connecting to the internet and sharing
+                data. That's the core of IoT...
+              </p>
+              <a
+                href="#"
+                class="text-indigo-600 font-medium hover:text-indigo-700"
+                >Learn More →</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden card-hover"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img
+              src="img/AI .jpg"
+              alt="AI Course"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">AI Impact on Society</h3>
+              <p class="text-gray-600 mb-4">
+                AI is transforming industries by analyzing huge amounts of data
+                quickly and making decisions...
+              </p>
+              <a
+                href="#"
+                class="text-indigo-600 font-medium hover:text-indigo-700"
+                >Learn More →</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden card-hover"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="img/advance distributed sys.jpg"
+              alt="AR VR Course"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                AR & VR impact on Education
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Experience immersive learning through AR and VR technologies...
+              </p>
+              <a
+                href="#"
+                class="text-indigo-600 font-medium hover:text-indigo-700"
+                >Learn More →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div data-aos="fade-right">
+            <img
+              src="https://img.freepik.com/free-photo/businessman-pointing-his-presentation-futuristic-digital-screen_53876-102617.jpg?t=st=1736150728~exp=1736154328~hmac=22bb5a151dd0005c9d82e491bb7e61cf94906456a91005cd7b9b6f5a59e188c7&w=900"
+              alt="About Curio"
+              class="rounded-lg shadow-xl"
+            />
+          </div>
+          <div data-aos="fade-left">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">
+              Why Choose us?
+            </h2>
+            <p class="text-lg text-gray-600 mb-6">
+              Curio aims to enhance the curiosity of students to see education
+              from another perspective out of the Box.
+            </p>
+            <p class="text-lg text-gray-600">
+              Connect your Learning with your Friends, Explore Subject &
+              connected with your core subjects. Learn by Real Life problem
+              solving Game.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+
+    <div class="puprplecard">
+      <h2>Give us your valuable insights, we value it</h2>
+
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLScLjTr0oOwtkHTsU8wojSIYYSX3cMOm2WDXDTh5GpeGpTjtlw/viewform?usp=header"
+        ><button>Feedback</button></a
+      >
+    </div>
+
+    <!-- footer  -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+              <li>About Us</li>
+              <li>Why Choose Us?</li>
+              <li>Blog</li>
+              <li>In the News</li>
+              <li>Careers</li>
+              <li>Become a Mentor</li>
+              <li>Partner with Us</li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Programs Offered</h3>
+            <ul>
+              <li>AR and VR in Engineering</li>
+              <li>Medical Applications of VR</li>
+              <li>Virtual Reality Design</li>
+              <li>Augmented Reality Development</li>
+              <li>Simulation and Modeling</li>
+              <li>Healthcare Technology</li>
+              <li>Interactive Learning Tools</li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Featured Technologies</h3>
+            <ul>
+              <li>3D Modeling</li>
+              <li>Mixed Reality Solutions</li>
+              <li>Immersive Training Simulations</li>
+              <li>Real-Time Visualization</li>
+              <li>Telemedicine Solutions</li>
+              <li>Digital Twin Technology</li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+              <li>Webinars and Workshops</li>
+              <li>Tutorials and Guides</li>
+              <li>Research Publications</li>
+              <li>Case Studies</li>
+              <li>Community Forums</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 CURIO. All rights reserved. | Privacy Policy | Terms of
+            Service
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="landing.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QQ3BP2V78J"></script>
+    <script>
+
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QQ3BP2V78J');
+
+      // Install PWA
+
+      let deferredPrompt;
+
+      // Check if the popup has already been shown in the current session
+      const hasPopupBeenShown = sessionStorage.getItem("pwaPopupShown");
+
+      // Listen for the beforeinstallprompt event
+      window.addEventListener("beforeinstallprompt", (event) => {
+        // Prevent the default mini-info bar from appearing
+        event.preventDefault();
+        // Save the event for later use
+        deferredPrompt = event;
+
+        // Show the popup only if it hasn't been shown in the session
+        if (!hasPopupBeenShown) {
+          sessionStorage.setItem("pwaPopupShown", "true");
+          showPwaInstallPopup();
+        }
+      });
+
+      // Function to display the PWA install popup
+      function showPwaInstallPopup() {
+        // Create the popup elements dynamically
+        const newwlw = document.createElement("div");
+        newwlw.id="newdiv";
+        newwlw.style.cssText=` 
+        position:absolute;
+        top:20px;
+        width:100%;
+        height:max-content;
+      display:flex;
+    justify-content: center;
+    align-items: center;
+       
+        `;
+        const popup = document.createElement("div");
+        popup.id = "pwa-popup";
+        popup.style.cssText = `
+  
+    position:relative;
+    padding: 20px;
+    top:20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    color:black;
+    border-radius: 8px;
+    z-index:1200;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    
+  `;
+
+        popup.innerHTML = `
+    <p style="margin: 0 0 10px; font-size: 16px;">Install this app for a better experience!</p>
+    <div class="pwa-btn"> <button id="install-btn" style="margin-right: 10px; padding: 10px 20px; background-color: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;">Install</button>
+    <button id="dismiss-btn" style="padding: 10px 20px; background-color: #ccc; color: #000; border: none; border-radius: 4px; cursor: pointer;">Dismiss</button>
+ </div>
+    `;
+
+    document.body.prepend(newwlw);
+    document.querySelector('#newdiv').appendChild(popup);
+     
+        // Add hover effects
+        const buttons = popup.querySelectorAll("button");
+        buttons.forEach((btn) => {
+          btn.addEventListener("mouseover", () => {
+            btn.style.opacity = "0.9";
+          });
+          btn.addEventListener("mouseout", () => {
+            btn.style.opacity = "1";
+          });
+        });
+
+        // Add event listeners to the buttons
+        document.getElementById("install-btn").addEventListener("click", () => {
+          if (deferredPrompt) {
+            console.log(
+              "Install button clicked. Showing the install prompt..."
+            );
+            // Show the install prompt
+            deferredPrompt.prompt();
+
+            // Wait for the user's response
+            deferredPrompt.userChoice.then((choiceResult) => {
+              if (choiceResult.outcome === "accepted") {
+                console.log("User accepted the install prompt");
+              } else {
+                console.log("User dismissed the install prompt");
+              }
+              deferredPrompt = null; // Clear the saved prompt
+            });
+          } else {
+            console.log("Deferred prompt is not available");
+          }
+
+          // Remove the popup
+          document.getElementById("pwa-popup").remove();
+        });
+
+        document.getElementById("dismiss-btn").addEventListener("click", () => {
+          // Remove the popup
+          document.getElementById("pwa-popup").remove();
+        });
+      }
+    </script>
+  </body>
+</html>
